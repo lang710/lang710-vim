@@ -25,7 +25,7 @@
 ############################  SETUP ZSH
 cd ~
 yum install -y zsh
-which zsh >/dev/null
+which zsh >/dev/null 2>&1
 if [[ $? -ne 0 ]]; then
   echo "zsh is abnormal!"
   exit
